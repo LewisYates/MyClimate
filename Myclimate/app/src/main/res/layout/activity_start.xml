@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="uk.ac.lincoln.students.yat13389566.myclimate.StartActivity"
+    android:background="#3C9BFF">
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Start"
+        android:id="@+id/startMain"
+        android:onClick="startMain"
+        android:textColor="#F0FFFF"
+        android:background="#FF8C00"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="71dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageView2"
+        android:src="@mipmap/my"
+        android:layout_marginStart="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="63dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="climate"
+        android:id="@+id/textView"
+        android:textColor="#F0FFFF"
+        android:layout_marginLeft="51dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="31dp"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_alignEnd="@+id/startMain" />
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:id="@+id/imageView3"
+        android:src="@mipmap/pulse"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginStart="60dp"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2" />
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:id="@+id/imageView7"
+        android:src="@mipmap/cloud"
+        android:layout_marginBottom="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/textView" />
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:id="@+id/imageView14"
+        android:src="@mipmap/maps"
+        android:layout_alignTop="@+id/imageView7"
+        android:layout_toStartOf="@+id/imageView17"
+        android:layout_marginEnd="25dp" />
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:id="@+id/imageView17"
+        android:src="@mipmap/petal"
+        android:layout_marginBottom="21dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="9dp" />
+
+</RelativeLayout>

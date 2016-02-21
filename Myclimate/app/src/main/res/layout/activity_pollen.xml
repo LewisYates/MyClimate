@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="uk.ac.lincoln.students.yat13389566.myclimate.Pollen"
+    android:background="#3C9BFF">
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listPollen"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="54dp"
+        android:layout_below="@+id/pollenInfo"
+        android:layout_alignStart="@+id/imageView5"
+        android:layout_marginStart="21dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Pollen Information"
+        android:id="@+id/pollenInfo"
+        android:layout_alignBottom="@+id/imageView5"
+        android:layout_toEndOf="@+id/imageView5"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#FFFFFF"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView5"
+        android:src="@mipmap/petal"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView15"
+        android:src="@mipmap/grass"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/imageView16"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView16"
+        android:src="@mipmap/earth"
+        android:layout_alignTop="@+id/listPollen"
+        android:layout_alignStart="@+id/imageView15" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView18"
+        android:layout_marginTop="16dp"
+        android:src="@mipmap/leaf"
+        android:layout_below="@+id/imageView15"
+        android:layout_alignStart="@+id/imageView15" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView19"
+        android:layout_marginTop="18dp"
+        android:src="@mipmap/tree"
+        android:layout_below="@+id/imageView18"
+        android:layout_alignStart="@+id/imageView18" />
+
+</RelativeLayout>
